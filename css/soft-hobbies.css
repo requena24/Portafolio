@@ -1,0 +1,146 @@
+.soft-hobbies{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.soft-skills, .hobbies{
+    color: var(--color-letra);
+    width: 40%;
+    padding: 1rem;
+}
+
+.soft-skills__title, .hobbies__title{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-family: var(--roboto);
+    font-size: 3.5rem;
+}
+
+.soft-skills__list, .hobbies__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: .15rem;
+}
+
+.soft-skills__item, .hobbies__item{
+    display: flex;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    text-align: left;
+    align-items: center;
+    padding: .5rem;
+    font-family: var(--roboto);
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+
+
+/* .time-managment::before{
+    margin-right: 55%;
+}
+
+.teamwork::before{
+    margin-right: 55%;
+}
+
+.troubleshooting::before{
+    margin-right: 55%;
+}
+
+.empathy::before{
+    margin-right: 55%;
+}
+
+.organization::before{
+    margin-right: 55%;
+}
+
+.responsability::before{
+    margin-right: 55%;
+} */
+
+
+.icon-soft{
+    padding-right: 1rem;
+}
+
+
+@media screen and (max-width: 894px) {
+    .soft-hobbies{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 2rem;
+        margin-bottom: 5rem
+    }
+    
+    .soft-skills, .hobbies{
+        width: 100%;
+        padding: 0;
+        text-align: justify;
+    }
+
+    .hobbies{
+        margin-top: 2rem;
+    }
+    
+    .soft-skills__title, .hobbies__title{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .soft-skills__list, .hobbies__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        letter-spacing: .15rem;
+        padding: 1rem;
+    }
+    
+    .soft-skills__item, .hobbies__item{
+        display: flex;
+        vertical-align: middle;
+        text-align: start;
+        padding: .5rem;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+}
+
+@media screen and (min-width: 894px) {
+    .soft-skills__item:before, .hobbies__item:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 100%;
+        bottom: 0;
+        background: var(--color-letra);
+        height: 4px;
+        transition-property: right;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-out;
+        margin-right: auto;
+    }
+
+    .soft-skills__item:hover:before, .soft-skills__item:focus:before, .soft-skills__item:active:before {
+        right: 0;
+    }  
+    
+    .hobbies__item:hover:before, .hobbies__item:focus:before, .hobbies__item:active:before {
+        right: 0;
+    }
+    
+}
+

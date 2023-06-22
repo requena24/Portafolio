@@ -1,0 +1,205 @@
+.container-home{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    box-sizing: border-box;
+}
+
+.box-left{
+    width: 65%;
+    float: left;
+    margin-left: 5rem;
+    margin-right: 2rem;
+    padding: 1rem;
+    color: var(--color-letra);
+    border-bottom: .25rem solid white;
+    border-top: .25rem solid white;
+}
+
+
+.box-left__career{
+    font-size: 4rem;
+    padding: .5rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--roboto);
+}
+
+.box-left__description{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    font-family: var(--roboto);
+    font-weight: lighter;
+    
+}
+
+.box-left__items{
+    margin: 1rem;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+}
+
+.box-left__items--enlace{
+    padding: .7rem;
+    letter-spacing: .3rem;
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    border: 2px solid white;
+    transition: all .8s;
+    cursor: pointer;
+}
+
+.box-right{
+    width: 35%;
+    float: right;
+    margin-left: 2rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.box-right__img-perfil{
+    border-radius: 50%;
+    width: 15rem;
+    border: .40rem solid white;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 894px){
+    .container-home{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: .2rem;
+    }
+
+    .box-left{
+        width: 80%;
+        margin: 0;
+        padding: .5rem;
+        border-bottom: .25rem solid white;
+        border-top: .25rem solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-left__career{
+        font-size: 2rem;
+        padding: .125rem;
+        text-align: center;
+        font-weight: 700;
+        font-family: var(--roboto);
+    }
+    
+    .box-left__description{
+        font-size: 1rem;
+        text-align: justify;
+        padding: 1rem;
+        font-family: var(--roboto);
+        font-weight: lighter;
+        
+    }
+    
+    .box-left__items{
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
+    .box-left__items--enlace{
+        margin: .35rem;
+        padding: .40rem;
+        letter-spacing: .3rem;
+        font-family: var(--roboto);
+        text-transform: uppercase;
+        border: 2px solid white;
+        transition: all .8s;
+        text-align: center;
+    }
+
+    .box-right{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0 0;
+    }
+    
+    .box-right__img-perfil{
+        border-radius: 50%;
+        width: 10rem;
+        border: .20rem solid white;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .box-right{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0 0 0;
+    }
+
+    .box-right__img-perfil{
+        border-radius: 50%;
+        width: 10rem;
+        border: .20rem solid white;
+    }
+
+    .container-home{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+
+    .box-left{
+        width: 80%;
+        margin: 0;
+        padding: .5rem;
+        border-bottom: .25rem solid white;
+        border-top: .25rem solid white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 894px){
+    .gh:hover{
+        box-shadow: 0 2px 15px white;
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+    
+    .li:hover{
+        box-shadow: 0 2px 15px #0e76a8;
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+    
+    .insta:hover{
+        box-shadow: 0 2px 15px #F56040;
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+    
+    .cv:hover{
+        box-shadow: 0 2px 15px #59B579;
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+}   

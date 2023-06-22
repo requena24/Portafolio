@@ -1,0 +1,84 @@
+.about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    text-align: justify;
+    padding-top: 2.3rem;
+    box-sizing: border-box;
+}
+
+.about-me__title{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    color: var(--color-letra);
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--roboto);
+    font-size: 3.5rem;
+}
+
+.about-me__contenido{
+    color: var(--color-letra);
+    font-family: var(--roboto);
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: justify;
+    padding-bottom: 1.25rem;
+    letter-spacing: .4rem;
+    padding: 1rem;
+}
+
+.tres, .cuatro, .cinco{
+    line-height: 1.25;
+}
+
+.cinco{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:894px) {
+    .about-me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-me__title{
+        width: 100%;
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+        color: var(--color-letra);
+        text-align: center;
+        font-weight: 700;
+        font-family: var(--roboto);
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-me__contenido{
+        width: 100%;
+        color: var(--color-letra);
+        font-family: var(--roboto);
+        width: 80%;
+        font-size: 1rem;
+        font-weight: lighter;
+        text-align: justify;
+        padding-bottom: 1rem;
+        letter-spacing: .2rem;
+        padding: 0;
+        padding-bottom: 2rem;
+        line-height: 1.8;
+    }
+    
+    
+    .cinco{
+        margin-bottom: 3rem;
+    }
+}

@@ -1,0 +1,220 @@
+/* Hard Skills */
+.hard-tools{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-letra);
+    justify-content: center;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: -5rem;
+    box-sizing: border-box;
+}
+
+.img-hard-tool{
+    padding: .25rem;
+}
+
+.hard-skills__title{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-family: var(--roboto);
+    font-size: 3.5rem;
+}
+
+.hard-skills__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    letter-spacing: .5rem;
+}
+
+.hard-skills__item{
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    transition: all .8s;
+    font-family: var(--roboto);
+}
+
+/* Responsiva Hard tools */
+
+@media screen and (max-width:894px){
+    .hard-tools{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color: var(--color-letra);
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin-bottom: -5rem;
+    }
+
+    .img-hard-tool{
+        padding: .25rem;
+        width: 64px;
+    }
+
+    .hard-skills__title{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-weight: bold;
+        font-family: var(--roboto);
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .hard-skills__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hard-skills__item{
+        align-items: center;
+        padding: 0;
+        margin: .8rem;
+        display: flex;
+        transition: all .8s;
+        font-family: var(--roboto);
+    }
+}
+
+@media screen and (min-width:894px){
+    .html:hover{
+        transform: scale(120%);
+        transition: all .5s linear;
+    }
+
+    .css:hover{
+        transform: scale(120%);
+        transition: all .5s linear;
+    }
+
+    .js:hover{
+        transform: scale(120%);
+        transition: all .5s linear;
+    }
+
+    .git:hover{
+        transform: scale(120%);
+        transition: all .5s linear;
+    }
+
+    .ps:hover{
+        transform: scale(120%);
+        transition: all .5s linear;
+    }
+
+    .py:hover{
+        transform: scale(120%);
+        transition: all .5s linear;
+    }
+
+}
+
+
+/* --- Tools --- */
+
+.tools{
+    margin-bottom: 5rem;
+}
+
+.tools__title{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    font-weight: bold;
+    font-family: var(--roboto);
+    font-size: 3.5rem;
+}
+
+.tools__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    letter-spacing: .5rem;
+}
+
+.tools__items{
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:894px){
+    .tools{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .tools__title{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        text-align: center;
+        font-weight: 700;
+        font-family: var(--roboto);
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .tools__list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tools__items{
+        align-items: center;
+        padding: 0;
+        margin: .8rem;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:894px){
+    .vsc:hover{
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+
+    .github:hover{
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+
+    .figma:hover{
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+
+    .trello:hover{
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+
+    .notion:hover{
+        transform: scale(120%);
+        transition: .5s linear;
+    }
+
+}

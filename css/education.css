@@ -1,0 +1,132 @@
+.education{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-top: 4rem;
+    padding-top: 5rem;
+}
+
+.education__title{
+    width: 100%;
+    padding: 2rem;
+    color: var(--color-letra);
+    font-weight: bold;
+    font-family: var(--roboto);
+    font-size: 3.5rem;
+    text-align: center;
+    transition: all .8s;
+}
+
+.ipn, .alura{
+    color: var(--color-letra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+    transition: all 1s;
+    border-radius: 40px;
+    padding: 1rem;
+    margin: 2rem
+}
+
+.ipn__career, .alura__career{
+    font-weight: bold;
+    font-family: var(--roboto);
+    font-size: 1.50rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ipn__school, .alura__school{
+    font-weight: 400;
+    font-family: var(--roboto);
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.ipn__description,.alura__description{
+    font-weight: 100;
+    font-family: var(--roboto);
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo-education{
+    padding: 1rem;
+}
+
+
+@media screen and (max-width: 894px){
+    .education{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 5rem;
+    }
+    
+    .education__title{
+        width: 100%;
+        padding: 0;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: center;
+        transition: all .8s;
+        margin-bottom: 2rem;
+    }
+    
+    .ipn, .alura{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transition: all .8s;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .ipn__career, .alura__career{
+        font-weight: 500;
+        font-family: var(--roboto);
+        font-size: 1.5rem;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .ipn__school, .alura__school{
+        font-weight: 400;
+        font-family: var(--roboto);
+        font-size: 1rem;
+        padding: .75rem;
+        text-align: center;
+    }
+    
+    .ipn__description,.alura__description{
+        font-weight: 100;
+        font-family: var(--roboto);
+        font-size: .8rem;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .logo-education{
+        padding: .75rem;
+    }
+}
+
+@media screen and (min-width: 894px){
+    .ipn:hover, .alura:hover{
+        box-shadow:  0px 0px 43px 5px rgba(255,255,255,0.46);
+        transform: scale(95%);
+        border-radius: 50px;
+    }   
+}
