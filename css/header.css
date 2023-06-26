@@ -81,19 +81,19 @@ header{
     .head-enlace:hover {
         letter-spacing: 0;
     }
-    
+
     .head-enlace:hover,
     .head-enlace:active {
         letter-spacing: .6rem;
     }
-    
+
     .head-enlace:after,
     .head-enlace:before {
         backface-visibility: visible;
         content: " ";
         transition: all 280ms ease-in-out;
     }
-    
+
     .head-enlace:after,
     .head-enlace:before {
         backface-visibility: hidden;

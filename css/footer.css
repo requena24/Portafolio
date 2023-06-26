@@ -50,24 +50,24 @@
         margin-bottom: 0;
         transition: all .8s;
     }
-    
+
     .texto__footer{
         padding: 1rem;
     }
-    
+
     .redes-sociales{
         display: flex;
         justify-content: center;
         align-items: center;
         transition: all .8s;
     }
-    
+
     .redes-sociales__list{
         display: flex;
         flex-direction: row;
         padding: 1rem;
     }
-    
+
     .redes-sociales__item{
         padding: 1rem;
     }

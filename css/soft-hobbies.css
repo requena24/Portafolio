@@ -80,7 +80,7 @@
         margin-top: 2rem;
         margin-bottom: 5rem
     }
-    
+
     .soft-skills, .hobbies{
         width: 100%;
         padding: 0;
@@ -90,7 +90,7 @@
     .hobbies{
         margin-top: 2rem;
     }
-    
+
     .soft-skills__title, .hobbies__title{
         width: 100%;
         text-align: center;
@@ -99,7 +99,7 @@
         font-size: 2.5rem;
         margin-bottom: 2rem;
     }
-    
+
     .soft-skills__list, .hobbies__list{
         display: flex;
         flex-direction: column;
@@ -107,7 +107,7 @@
         letter-spacing: .15rem;
         padding: 1rem;
     }
-    
+
     .soft-skills__item, .hobbies__item{
         display: flex;
         vertical-align: middle;
@@ -136,11 +136,11 @@
 
     .soft-skills__item:hover:before, .soft-skills__item:focus:before, .soft-skills__item:active:before {
         right: 0;
-    }  
-    
+    }
+
     .hobbies__item:hover:before, .hobbies__item:focus:before, .hobbies__item:active:before {
         right: 0;
     }
-    
+
 }
 
