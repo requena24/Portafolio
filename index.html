@@ -416,40 +416,86 @@
         </p>
       </section>
 
-      <section class="form__box-right">   <!--Formulario -->
+      <!--Formulario -->
+      <section class="form__box-right">   
         <form class="form__content">
-          <label for="name" class="label-text">Name</label>
-          <input type="text" id="name" class="input-form" required minlength="0" maxlength="50"/>
+          <fieldset>
+            <div class="input-container">
+              <label for="name" class="label-text">Name</label>
+              <input 
+              type="text" 
+              id="name" 
+              class="input-form" 
+              required
+              pattern="[\s\S]{1,50}"
+              data-tipo="name"
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+          </fieldset>
 
-          <label for="telephone" class="label-text">Telephone</label>
-          <input
-            type="text"
-            id="telephone"
-            class="input-form"
-            placeholder="(XX) XXXX XXXX"
-          />
+          <fieldset>
+            <div class="input-container">
+              <label for="telephone" class="label-text">Telephone</label>
+              <input
+                type="text"
+                id="telephone"
+                class="input-form"
+                placeholder="(XX) XXXX XXXX"
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+          </fieldset>
 
-          <label for="email" class="label-text">E-mail</label>
-          <input
-            type="email"
-            id="email"
-            class="input-form"
-            placeholder="email@example.com"
-          />
+          <fieldset>
+            <div class="input-container">
+              <label for="email" class="label-text">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                class="input-form"
+                placeholder="email@example.com"
+                required
+                data-tipo="email"
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+          </fieldset>
 
-          <label for="subject" class="label-text">Subject</label>
-          <input type="text" id="subject" class="input-form" placeholder="" required minlength="0" maxlength="50"/>
+          <fieldset>
+            <div class="input-container">
+              <label for="subject" class="label-text">Subject</label>
+              <input 
+                type="text" 
+                id="subject" 
+                class="input-form" 
+                placeholder="" 
+                required
+                pattern="[\s\S]{1,50}"
+                data-tipo="subject"
+              />
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+          </fieldset>
 
-          <label for="message" class="label-text">Message</label>
-          <textarea
-            id="message"
-            cols="1"
-            rows="1"
-            class="input-form form-area"
-            required minlength="0" maxlength="300">
-          </textarea>
+          <fieldset>
+            <div class="input-container">
+              <label for="message" class="label-text">Message</label>
+              <textarea
+                id="message"
+                cols="10"
+                rows="1"
+                class="input-form form-area"
+                required
+                pattern="[\s\S]{10,300}"
+                data-tipo="textarea"
+                >
+              </textarea>
+              <span class="input-message-error">Este campo no es valido</span>
+            </div>
+          </fieldset>
 
-          <input type="submit" value="Submit Form" class="btn-submit" />
+          <input type="button" value="Submit Form" class="btn-submit" id="boton-enviar" disabled />
         </form>
       </section>
     </div>
@@ -485,5 +531,6 @@
         </ul>
       </section>
     </footer>
+    <script src="./js/valida.js" type="module"></script>
   </body>
 </html>
