@@ -416,10 +416,10 @@
         </p>
       </section>
 
-      <section class="form__box-right">
+      <section class="form__box-right">   <!--Formulario -->
         <form class="form__content">
           <label for="name" class="label-text">Name</label>
-          <input type="text" id="name" class="input-form" />
+          <input type="text" id="name" class="input-form" required minlength="0" maxlength="50"/>
 
           <label for="telephone" class="label-text">Telephone</label>
           <input
@@ -438,7 +438,7 @@
           />
 
           <label for="subject" class="label-text">Subject</label>
-          <input type="text" id="subject" class="input-form" placeholder="" />
+          <input type="text" id="subject" class="input-form" placeholder="" required minlength="0" maxlength="50"/>
 
           <label for="message" class="label-text">Message</label>
           <textarea
@@ -446,7 +446,8 @@
             cols="1"
             rows="1"
             class="input-form form-area"
-          ></textarea>
+            required minlength="0" maxlength="300">
+          </textarea>
 
           <input type="submit" value="Submit Form" class="btn-submit" />
         </form>
